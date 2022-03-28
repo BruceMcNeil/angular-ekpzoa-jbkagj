@@ -1,11 +1,18 @@
 <h2>S.T.A.L.K.E.R. mod translations</h2>
 <div *ngFor="let product of products">
-  <h3>
-    <a [title]="product.description + ': click for details'">
-      {{ product.name }}
-    </a>
-  </h3>
-  <p *ngIf="product.description">{{ product.description }}</p>
+  <div style="display: inline-block; vertical-align: middle;">
+    <h3>
+      <a [title]="product.description + ': click for details'">
+        {{ product.name }}
+      </a>
+    </h3>
+    <p *ngIf="product.description">
+      {{ product.description }}
+    </p>
+  </div>
+  <button (click)="share()" style="margin-left: 15px; vertical-align: middle;">
+    Add to wishlist
+  </button>
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.

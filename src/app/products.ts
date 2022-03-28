@@ -22,13 +22,13 @@ export const products = [
     id: 3,
     name: 'Stalker Foto translated into Korean',
     price: 299,
-    description: 'Hard to find Korean version',
+    description: 'Hard to find Korean version.',
   },
   {
     id: 4,
     name: 'Stalker Foto translated into Japanese',
     price: 299,
-    description: 'Rare Japanese version',
+    description: 'Rare Japanese version.',
   },
 ];
 
