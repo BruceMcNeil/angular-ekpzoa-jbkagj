@@ -1,10 +1,11 @@
-<h2>Mojo from app-product-list</h2>
+<h2>S.T.A.L.K.E.R. mod translations</h2>
 <div *ngFor="let product of products">
   <h3>
-    <a [title]="product.description + ' details'">
+    <a [title]="product.description + ': click for details'">
       {{ product.name }}
     </a>
   </h3>
+  <p *ngIf="product.description">{{ product.description }}</p>
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
