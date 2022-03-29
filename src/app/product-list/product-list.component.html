@@ -1,5 +1,6 @@
 <h2>S.T.A.L.K.E.R. mod translations</h2>
 <div *ngFor="let product of products">
+  <hr />
   <div style="display: inline-block; vertical-align: middle;">
     <h3>
       <a [title]="product.description + ': click for details'">
@@ -10,12 +11,17 @@
       {{ product.description }}
     </p>
   </div>
-  <button
-    (click)="addToWishlist()"
-    style="margin-left: 15px; vertical-align: middle;"
-  >
-    Add to wishlist
-  </button>
+  <ul style="display: flex;">
+    <li>
+      <button (click)="addToWishlist()">Add to wishlist</button>
+    </li>
+    <li>
+      <app-product-alerts
+        [product]="product"
+        (notify)="onNotify()"
+      ></app-product-alerts>
+    </li>
+  </ul>
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.

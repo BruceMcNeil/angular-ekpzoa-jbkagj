@@ -14,6 +14,10 @@ export class ProductListComponent {
     window.alert('Shared!');
   }
 
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
+  }
+
   addToWishlist() {
     window.alert('Added to your wishlist!');
   }
